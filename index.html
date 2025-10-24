@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src\styles\normalize.css">
+    <link rel="stylesheet" href="src\styles\main.css">
     <title>To-Do List</title>
 </head>
 <body>
-        
+    <div class="main-container">
+        <div class="inner-container">
+            <form action="POST" class="create-task-form">
+                <div class="task-info">
+                    <input id="task-title" type="text" class="task-info__field" placeholder="Title...">
+                    <input id="task-about" type="text" class="task-info__field" placeholder="About...">
+                </div>
+                <button class="add-task-btn">+</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
