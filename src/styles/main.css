@@ -7,47 +7,17 @@ body {
 
 .main-container {
     min-width: 480px;
-    height: 100vw;
+    height: 100vh;
 }
 
 .inner-container {
+    width: 100%;
+    height: 100%;
     padding: 32px;
 }
 
-.create-task-form {
-    display: flex;
+.tasks-container {
     width: 100%;
-    gap: 8px;
-}
-
-.task-info {
+    height: 100%;
     display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 4px;
-}
-
-.task-info__field {
-    height: 50%;
-    background-color: #242320;
-    border: #FF8303 1px solid;
-    border-radius: 4px;
-    padding: 4px 6px;
-    color: #F0E3CAA3;
-    font-size: 14px;
-}
-
-.add-task-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 72px;
-    height: 72px;
-    background-color: #1B1A17;
-    border: #FF8303 1px solid;
-    border-radius: 4px;
-    color: #FF8303;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-size: 72px;
 }
