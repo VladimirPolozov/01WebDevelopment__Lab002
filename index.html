@@ -6,17 +6,19 @@
     <link rel="stylesheet" href="src\styles\normalize.css">
     <link rel="stylesheet" href="src\styles\main.css">
     <link rel="stylesheet" href="src\styles\components.css">
+    <link rel="stylesheet" href="src\styles\create-task-form.css">
+    <link rel="stylesheet" href="src\styles\card-task.css">
     <title>To-Do List</title>
 </head>
 <body>
     <div class="main-container">
         <div class="inner-container">
-            <form action="POST" class="create-task-form">
+            <form id="create-task-form" class="create-task-form">
                 <div class="task-info">
                     <input id="task-title" type="text" class="task-info__field" placeholder="Title...">
                     <input id="task-about" type="text" class="task-info__field" placeholder="About...">
                 </div>
-                <button class="add-task-btn">+</button>
+                <button type="submit" class="btn add-task-btn">+</button>
             </form>
             <div id="tasks-container" class="tasks-container"></div>
         </div>

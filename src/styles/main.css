@@ -7,7 +7,7 @@ body {
 
 .main-container {
     min-width: 480px;
-    height: 100vh;
+    height: 95vh;
 }
 
 .inner-container {
@@ -20,4 +20,26 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 16px;
+}
+
+.no-tasks p {
+    padding-top: 12px;
+    border-top: #FF8303 2px solid;
+    padding-bottom: 12px;
+    border-bottom: #FF8303 2px solid;
+}
+
+.no-tasks {
+    color: #FFFFFF;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;;
+    font-weight: 400;
 }
