@@ -4,6 +4,8 @@
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    background-color: #242320;
+    align-items: start;
 }
 
 .task-card__title {

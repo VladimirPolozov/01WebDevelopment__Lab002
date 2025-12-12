@@ -24,18 +24,8 @@ export function addTask(title, body) {
     return newTask;
 }
 
-export function deleteTask(id) {
+export function deleteTask(tasks) {
     const tasks = getTasks();
     const filteredTasks = tasks.filter(task => task.id !== id);
     saveTasks(filteredTasks);
-}
-
-export function editTask(id, newTitle, newBody) {
-    const tasks = getTasks();
-    const taskIndex = tasks.findIndex(task => task.id === id);
-    if (taskIndex !== -1) {
-        tasks[taskIndex].title = newTitle.trim();
-        tasks[taskIndex].body = newBody.trim();
-        saveTasks(tasks);
-    }
 }
