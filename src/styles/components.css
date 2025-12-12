@@ -74,13 +74,6 @@
     border-color: #FF8303;
 }
 
-.modal-content h4 {
-    color: white;
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-size: 1.2rem;
-}
-
 .modal-input {
     width: 100%;
     padding: 12px;
@@ -111,6 +104,12 @@
     justify-content: center;
 }
 
+.share-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
 /* Контекстное меню */
 .context-menu {
     display: none;
@@ -123,6 +122,13 @@
 .context-menu .small-btn {
     background-color: #242320;
     color: #D9D9D9;
+}
+
+.share-buttons .small-btn {
+    padding: 4px;
+    border-radius: 25px;
+    background-color: #23221F;
+    color: #F0E3CA;
 }
 
 .context-menu__icon {

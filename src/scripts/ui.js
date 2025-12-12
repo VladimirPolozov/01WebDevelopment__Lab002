@@ -78,9 +78,9 @@ export function setupTaskListeners() {
             if (action === 'delete') {
                 showDeleteModal(id);
             } else if (action === 'share') {
-                alert('Поделиться: ' + id);
+                showShareModal(id);
             } else if (action === 'info') {
-                alert('Информация о: ' + id);
+                /* */
             } else if (action === 'edit') {
                 showEditModal(id);
             }
@@ -113,6 +113,7 @@ export function setupTaskListeners() {
 // Глобальные переменные, обработчики модальных окон
 let currentDeleteId = null;
 let currentEditId = null;
+let currentShareId = null;
 
 export function showDeleteModal(id) {
     currentDeleteId = id;
@@ -148,6 +149,22 @@ export function hideEditModal() {
     if (modal) {
         modal.style.display = 'none';
         currentEditId = null;
+    }
+}
+
+export function showShareModal(id) {
+    currentShareId = id;
+    const modal = document.getElementById('share-modal');
+    if (modal) {
+        modal.style.display = 'flex';
+    }
+}
+
+export function hideShareModal() {
+    const modal = document.getElementById('share-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        currentShareId = null;
     }
 }
 
@@ -198,6 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains('modal')) {
             hideDeleteModal();
             hideEditModal();
+            hideShareModal();
         }
     });
 
@@ -205,6 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.key === 'Escape') {
             hideDeleteModal();
             hideEditModal();
+            hideShareModal();
         }
     });
 });
