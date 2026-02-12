@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src\styles\normalize.css">
+    <link rel="stylesheet" href="src\styles\main.css">
+    <link rel="stylesheet" href="src\styles\components.css">
+    <link rel="stylesheet" href="src\styles\create-task-form.css">
+    <link rel="stylesheet" href="src\styles\card-task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="inner-container">
+            <form id="create-task-form" class="create-task-form">
+                <div class="task-info">
+                    <input id="task-title" type="text" class="task-info__field" placeholder="Title...">
+                    <input id="task-about" type="text" class="task-info__field" placeholder="About...">
+                </div>
+                <button type="submit" class="btn add-task-btn">+</button>
+            </form>
+            <div id="tasks-container" class="tasks-container"></div>
+        </div>
+    </div>
+    <div id="delete-modal" class="modal">
+        <div class="modal-content">
+            <p>Delete this task?</p>
+            <div class="modal-buttons">
+                <button id="confirm-delete-btn" class="btn">Yes</button>
+                <button id="cancel-delete-btn" class="btn">No</button>
+            </div>
+        </div>
+    </div>
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <p>Edit task</p>
+            <input id="edit-title" type="text" placeholder="Title..." class="modal-input">
+            <textarea id="edit-body" placeholder="About..." class="modal-textarea"></textarea>
+            <div class="modal-buttons">
+                <button id="cancel-edit-btn" class="btn btn--cancel">Cancel</button>
+                <button id="save-edit-btn" class="btn btn--save">Save</button>
+            </div>
+        </div>
+    </div>
+    <div id="share-modal" class="modal">
+        <div class="modal-content share-modal-content">
+            <p>Share with task</p>
+            <div class="share-buttons">
+                <button class="small-btn"><i class="fas fa-copy"></i></button>
+                <button class="small-btn"><i class="fab fa-vk"></i></button>
+                <button class="small-btn"><i class="fab fa-telegram-plane"></i></button>
+                <button class="small-btn"><i class="fab fa-whatsapp"></i></button>
+                <button class="small-btn"><i class="fab fa-facebook-f"></i></button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/scripts/main.js"></script>
+</body>
+</html>

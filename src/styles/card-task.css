@@ -1,0 +1,26 @@
+.task-card {
+    padding: 16px;
+    border: #A35709 2px solid;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #242320;
+    align-items: start;
+}
+
+.task-card__title {
+    color: #F0E3CA;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.task-card__body {
+    color: #F0E3CA;
+    font-size: 14px;
+}
+
+.task-card__actions {
+    display: flex;
+    align-items: center;
+}
